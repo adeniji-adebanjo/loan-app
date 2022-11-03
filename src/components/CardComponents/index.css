@@ -2,6 +2,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  flex-direction: column;
 }
 
 /* section,
@@ -118,9 +119,19 @@ section .currency {
   font-size: 15px;
 }
 
+.loan-details {
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 30px;
+  margin: 25px;
+  padding: 15px;
+}
 .card-details,
 .card-amount {
   background-color: #f2e74d;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 5px;
 }
 
 .card-amount {
@@ -128,11 +139,24 @@ section .currency {
 }
 .card-rates {
   display: flex;
-  position: fixed;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* position: fixed; */
   margin: 2px;
   padding: 5px;
 }
+.status {
+  display: flex;
+  justify-content: end;
+}
+.status h3 {
+  font-weight: normal;
+  font-size: 15px;
+}
 
+.btn-status {
+  font-size: 15px;
+}
 .interest-rate,
 .first-payment,
 .loan-duration {
@@ -140,10 +164,12 @@ section .currency {
   margin: 15px;
 }
 
-.loan-history {
+.loan-details {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  min-height: 100vh;
+  grid-column: auto;
 }
 
 .row .repayment-schedule h3 {
@@ -154,7 +180,7 @@ section .currency {
 }
 .loan-activities {
   display: flex;
-  position: fixed;
+  /* position: fixed; */
 }
 
 /* .loan-activities, */

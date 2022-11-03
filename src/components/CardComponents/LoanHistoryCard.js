@@ -5,7 +5,7 @@ import loanhistory from "../../data/loan_history.json";
 const LoanHistory = () => {
   return (
     <>
-      <div className="loan-history">
+      <div className="loan-details">
         <div className="row">
           <div className="col">
             <div className="card-title">
@@ -31,12 +31,38 @@ const LoanHistory = () => {
                     <p>6 months</p>
                   </div>
                 </div>
+                <hr />
+                <div className="status">
+                  <h3>Status: </h3>
+                  <button className="btn-status">Ongoing</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="loan-details">
+          <div class="row">
+            <div className="col">
+              <div class="repayment-schedule">
+                <h3>Repayment Schedule</h3>
+                <p>showing schedule for ongoing loan</p>
+              </div>
+              <div className="loan-activities">
+                <div className="payment-details">
+                  <h6>January 26, 2022</h6>
+                  <h4>
+                    <span>&#8358;</span>2,000, 000.00
+                  </h4>
+                </div>
+                <div className="payment-status">
+                  <button className="btn-primary btn-success">Paid</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
         {/* <div class="row"> */}
-        <div className="col">
+        {/* <div className="col">
           <div class="repayment-schedule">
             <h3>Repayment Schedule</h3>
             <p>showing schedule for ongoing loan</p>
@@ -54,7 +80,7 @@ const LoanHistory = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* </div> */}
         {/* </div> */}
         {/* <div class="row">
