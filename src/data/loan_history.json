@@ -1,0 +1,20 @@
+{
+  "loan-history": [
+    {
+      "id": 1,
+      "balance": "&#8358; 2, 000, 000.00",
+      "interest-rate": "4.5%",
+      "1st-payment": "Jan 26, 2022",
+      "loan-duration": "6 months",
+      "status": "ongoing"
+    },
+    {
+      "id": 2,
+      "balance": "&#8358; 5, 000, 000.00",
+      "interest-rate": "4.5%",
+      "1st-payment": "Jan 21, 2021",
+      "loan-duration": "6 months",
+      "status": "completed"
+    }
+  ]
+}
