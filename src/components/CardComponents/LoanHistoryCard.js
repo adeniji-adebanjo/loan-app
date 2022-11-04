@@ -52,7 +52,7 @@ const LoanHistory = () => {
                 </div>
                 <div className="loan-history">
                   <h6>Loan Duration</h6>
-                  <p>6 months</p>
+                  <p>12 months</p>
                 </div>
               </div>
               <hr />
