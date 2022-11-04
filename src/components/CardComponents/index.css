@@ -2,54 +2,19 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-}
-
-/* section,
-.color1 {
-  background-color: #eef4ff;
-}
-section,
-.color2 {
-  background-color: #fdf4f5;
-}
-section,
-.color3 {
-  background-color: #fffce4;
-} */
-
-/* section,
-StatsCard {
-  padding: 1rem 2rem 1rem 2rem;
-  border-radius: 1rem;
-  color: black;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1rem;
-  transition: 0.5s ease-in-out;
-} */
-
-section,
-.total-loans,
-.total-repaid,
-.loan-balance {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
 }
 
 .total-loans,
-.logo {
+.logo1 {
   background-color: rgb(199, 33, 33);
   color: aliceblue;
   border-radius: 1rem;
   display: flex;
   padding: 1rem;
-  /* border: 1px solid black; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 section .total-repaid,
-.logo {
+.logo2 {
   background-color: rgb(88, 221, 26);
   color: aliceblue;
   border-radius: 1rem;
@@ -57,7 +22,7 @@ section .total-repaid,
   padding: 1rem;
 }
 .loan-balance,
-.logo {
+.logo3 {
   background-color: rgb(188, 125, 201);
   color: aliceblue;
   border-radius: 1rem;
@@ -77,6 +42,7 @@ section,
   gap: 1rem;
   justify-content: space-evenly;
   margin-top: 20px;
+  padding: 15px;
 }
 
 .total-loans {
@@ -107,20 +73,54 @@ section,
   );
 }
 
-section .eye {
-  position: relative;
-  top: 0;
+.total2 h6,
+h5 {
+  color: black;
+}
+.total3 h6,
+h5 {
+  color: black;
+}
+
+.eye {
   margin-top: -50px;
-  size: 5px;
+  color: black;
 }
 
 section .currency {
-  font-size: 15px;
+  font-size: 13px;
+}
+
+.loan-details {
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 30px;
+  padding: 25px 25px;
+  /* margin: 25px; */
 }
 
 .card-details,
 .card-amount {
-  background-color: #f2e74d;
+  color: #ffff;
+  background: rgb(233, 193, 72);
+  background: linear-gradient(
+    90deg,
+    rgba(233, 193, 72, 1) 0%,
+    rgba(205, 197, 172, 1) 34%,
+    rgba(117, 95, 28, 1) 100%
+  );
+  border-radius: 5px;
+  margin: 30px;
+  padding: 20px;
+}
+
+.loan-history {
+  color: #ffff;
+}
+.loan-history h6 {
+  color: #ffff;
+  font-size: 10px;
+  font-weight: 200;
 }
 
 .card-amount {
@@ -128,11 +128,31 @@ section .currency {
 }
 .card-rates {
   display: flex;
-  position: fixed;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 2px;
   padding: 5px;
 }
+.status {
+  display: flex;
+  justify-content: end;
+}
+.text {
+  font-weight: normal;
+  font-size: 15px;
+  padding: 10px;
+  color: #ffff;
+}
 
+.btn-status {
+  font-size: 15px;
+  border-radius: 5px;
+  border-width: 0;
+  background-color: rgb(223, 139, 70);
+  color: #ffff;
+  font-weight: 200;
+  padding: 5px;
+}
 .interest-rate,
 .first-payment,
 .loan-duration {
@@ -140,33 +160,17 @@ section .currency {
   margin: 15px;
 }
 
-.loan-history {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-.row .repayment-schedule h3 {
-  font-size: 20px;
-}
-.row .repayment-schedule {
-  font-size: 15px;
-}
-.loan-activities {
-  display: flex;
-  position: fixed;
-}
-
-/* .loan-activities, */
-.payment-details h4 {
+.payment-details p {
   font-size: 15px;
   color: #22e810;
 }
 .payment-details h6 {
   font-size: 15px;
 }
-
-/* .payment-status,
 .btn-success {
-  justify-content: end;
-} */
+  background-color: #22e810;
+  color: #ffff;
+  border-radius: 5px;
+  border-width: 0;
+  font-size: 15px;
+}
